@@ -45,7 +45,7 @@ class IAppium(unittest.TestCase):
         time.sleep(2)
 
     def _click_add_contact_btn(self):
-        elem = self._find_elem_by_xpath('//android.widget.Button[contains(@resource-id,"addContactButton")]')
+        elem = self._find_elem_by_xpath('//android.widget.Button[@content-desc="Add Contact"]')
         print(f'Click add contact button')
         elem.click()
 
